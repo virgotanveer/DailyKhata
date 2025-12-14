@@ -1,0 +1,140 @@
+Daily Cash Flow Tracker - PKR Currency
+
+================================================================================
+
+INSTRUCTIONS:
+1. Copy this entire content
+2. Open a new Google Sheet
+3. Paste starting from cell A1
+4. The formulas will work automatically
+
+================================================================================
+
+A1: Daily Cash Flow Tracker
+A2: Date: =TODAY()
+A3: 
+A4: OPENING BALANCE
+A5: Opening Balance: PKR 0.00
+A6: 
+A7: CASH IN ENTRIES
+A8: Date
+B8: Description
+C8: Type
+D8: Amount (PKR)
+A9: 
+B9: 
+C9: Cash
+D9: 0
+A10: 
+B10: 
+C10: Cash
+D10: 0
+A11: 
+B11: 
+C11: Online
+D11: 0
+A12: 
+B12: 
+C12: Online
+D12: 0
+A13: 
+B13: 
+C13: Cash
+D13: 0
+A14: 
+B14: 
+C14: Online
+D14: 0
+A15: 
+B15: 
+C15: Cash
+D15: 0
+A16: 
+B16: 
+C16: Online
+D16: 0
+A17: 
+B17: 
+C17: Cash
+D17: 0
+A18: 
+B18: 
+C18: Online
+D18: 0
+A19: 
+A20: CASH OUT ENTRIES
+A21: Date
+B21: Description
+C21: Amount (PKR)
+A22: 
+B22: 
+C22: 0
+A23: 
+B23: 
+C23: 0
+A24: 
+B24: 
+C24: 0
+A25: 
+B25: 
+C25: 0
+A26: 
+B26: 
+C26: 0
+A27: 
+B27: 
+C27: 0
+A28: 
+B28: 
+C28: 0
+A29: 
+B29: 
+C29: 0
+A30: 
+B30: 
+C30: 0
+A31: 
+A32: SUMMARY
+A33: Cash Sales:
+B33: =SUMIF(C9:C18,"Cash",D9:D18)
+C33: PKR
+A34: Online Sales:
+B34: =SUMIF(C9:C18,"Online",D9:D18)
+C34: PKR
+A35: Total Sales:
+B35: =SUM(D9:D18)
+C35: PKR
+A36: Total Cash Out:
+B36: =SUM(C22:C31)
+C36: PKR
+A37: Net Cash Flow:
+B37: =B35-B36
+C37: PKR
+A38: Closing Balance:
+B38: =B5+B37
+C38: PKR
+
+================================================================================
+
+FORMATTING INSTRUCTIONS:
+1. Select columns C and D, right-click > Format > Number > Currency
+2. Set currency symbol to "PKR" or leave as default if PKR not available
+3. Adjust column widths as needed
+4. You can add more rows by inserting rows between the existing data rows
+
+================================================================================
+
+HOW TO USE:
+1. Enter your opening balance in cell B5
+2. For cash in entries (rows 9-18):
+   - Enter date in column A
+   - Enter description in column B  
+   - Select "Cash" or "Online" in column C
+   - Enter amount in column D
+3. For cash out entries (rows 22-31):
+   - Enter date in column A
+   - Enter description in column B
+   - Enter amount in column C
+4. Summary section (rows 33-38) will calculate automatically
+
+================================================================================
